@@ -1,0 +1,46 @@
+{
+  "id": "int01",
+  "kind": "Interlude",
+  "number": "01",
+  "title": "Making Amends",
+  "pages": "31",
+  "header": "img/int01-header.jpg",
+  "cast": {
+    "narrator": { "name": "Narrator", "voice": "en_US-ryan-high", "length_scale": 1.12, "pitch": 1.0 },
+    "tharmagar": { "name": "Tharmagar", "voice": "en_GB-alan-medium", "length_scale": 1.12, "pitch": 0.93 },
+    "rules": { "name": "Rules", "voice": "en_US-lessac-high", "length_scale": 1.0, "pitch": 1.0 }
+  },
+  "scenes": [
+    {
+      "id": "story",
+      "tab": "story",
+      "title": "Making Amends",
+      "kicker": "Read aloud between Chapter 06 and Chapter 07",
+      "paragraphs": [
+        [["narrator", "There you stayed, both Tharmagar and you. How much time? It was impossible to tell. Accounting the hours was difficult, without sun or moon helping you. However, the candles extinguished themselves and, from time to time, you took turns to rest. The bright side of this overwhelming solitude was that, once all of them were slain, none of the monstrosities pestered you. Truth be told, you were starting to miss them."]],
+        [
+          ["tharmagar", "The First Belligerent called them ‘Creatures of Darkness.’ Any humanoid taken by it, serving only as a number, I mean..."],
+          ["narrator", "Tharmagar opens the subject. The echo was so strong, that you were capable of exchanging words from one side of the chamber to the other, without even needing to speak loudly."],
+          ["tharmagar", "And the ways of Darkness are not so different from other parasites we know: it slithers over our wounds, corrupts our blood, and if we succumb, it seizes our body and transforms us into those... things."]
+        ],
+        [["narrator", "You let yourself think for a moment, reflecting upon the encounters that stood out the most, while doing a meticulous job of inspecting the masonry to look for any secret passages. Maybe that was what happened to your Dearest One? If that was the case, could you possibly have saved them in any way?"]],
+        [["narrator", "Suddenly, that deep anguish that you imagined you had surpassed emerged from inside you, stronger than ever."]],
+        [
+          ["tharmagar", "I don't believe you could have, my dear fellow. Considering what we witnessed here, I don't believe that your Dearest One was even themselves any more when you confronted them. As soon as Darkness possesses a victim, it devours their mind the same way it does their body—and all that is left is just a carcass,"],
+          ["narrator", "Tharmagar answers, when you finally decide to expose your feelings. To you, those words taste bittersweet. On the one side, you feel relieved to imagine that you didn't take the life of someone you have always held close to your heart, but only from a villainous entity that seized their body. On the other side, you feel pain thinking of all the suffering they must have endured at the moment they were taken, and you weren't there to help."]
+        ],
+        [["narrator", "But the lectures about Tharmagar's new discoveries didn't stop there."]],
+        [["narrator", "As you came to learn from the long talks you and the sage shared, the “masters of the Art”—spellcasters—were the favorite lackeys of the Darkness, because they had a fundamental role in the enemy's logistics: they were the only ones capable of performing the ritual that awakened the Seeds."]],
+        [["narrator", "Nicknamed “Varatash,” they were the backbone of the Darkness' forces but, nonetheless, had no mind of their own. They were puppets, whose strings were pulled by a general, the true master of the invader army: the rank held by the Black Prince—or the Undead King, as Tharmagar suspects we have came to know it this time around."]],
+        [["narrator", "Then, at a certain point while drifting through those thoughts, your hands find a lever hidden in a secret hollow amidst the grouts of a fresco. Breathing heavily, you pull it down, hoping it isn't a trap. To your surprise and relief, a large stone slab leaps out of the wall, revealing a tunnel rudely dug into the mountain... and complete darkness."]],
+        [["narrator", "Excited by the discovery, you turn back to bring Tharmagar over. Carefully, the sage rises up from the nest he has made, closes the thick tome and, with arms trembling from the effort, puts it inside his pouch. How was it possible that a book so heavy could fit in a strap bag without weighing down the scholar's shoulder?"]],
+        [
+          ["tharmagar", "I carry a whole laboratory in here, without taking our supplies and the infusions I use into account... How could you possibly think I would be able to hold it all, if my bag wasn't special?"],
+          ["narrator", "The sage answers the question you make with your eyes."],
+          ["tharmagar", "Don't worry, the book will be safe. That's what matters. Now, let us go. I'm so sick of this place that I'm starting to miss Valarai..."]
+        ]
+      ]
+    }
+  ],
+  "next": "Chapter 07 – The Galleries Under the Mountain (page 32)"
+}
