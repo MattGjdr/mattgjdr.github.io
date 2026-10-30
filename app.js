@@ -38,7 +38,92 @@
       a.innerHTML = `<img src="img/${p.id}-header.jpg" alt=""><span class="pk">${label(p)} · p. ${p.pages}</span><b>${esc(p.title)}</b>`;
       box.appendChild(a);
     });
+    const rs = document.createElement("script");
+    rs.src = "data/rules.js";
+    rs.onload = () => initLookup(window.RULES || []);
+    rs.onerror = () => $("#lookup").classList.add("hidden");
+    document.body.appendChild(rs);
     return;
+  }
+
+  /* ---------- rules lookup (home page) ---------- */
+  function initLookup(RULES) {
+    const STOP = new Set("a an the is are be do does did what whats how much many when where why who which can could should i we you my our your of to in on at for from by with and or if it its this that there than then will happens happen get doing work works working mean means meaning explain rule rules about tell me any".split(" "));
+    const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/<[^>]+>/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
+    const words = s => norm(s).split(" ").filter(Boolean);
+    const stem = w => w.length > 4 ? w.replace(/(ing|ed|es|s)$/, "") : w;
+    // edit distance with an early exit, for typo tolerance
+    function close(a, b, max) {
+      if (Math.abs(a.length - b.length) > max) return false;
+      let prev = Array.from({ length: b.length + 1 }, (_, k) => k);
+      for (let i = 1; i <= a.length; i++) {
+        const cur = [i];
+        let best = i;
+        for (let j = 1; j <= b.length; j++) {
+          cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+          best = Math.min(best, cur[j]);
+        }
+        if (best > max) return false;
+        prev = cur;
+      }
+      return prev[b.length] <= max;
+    }
+    const index = RULES.map((r, i) => ({
+      i,
+      fields: [
+        [5, words(r.title).map(stem)],
+        [4, (r.tags || []).flatMap(words).map(stem)],
+        [1, words(r.category || "")],
+        [1, words(r.text).map(stem)],
+      ],
+    }));
+    function match(tok, list) {
+      let m = 0;
+      for (const w of list) {
+        if (w === tok) return 1;
+        if (tok.length >= 3 && w.startsWith(tok)) m = Math.max(m, 0.9);
+        else if (tok.length >= 4 && close(tok, w, tok.length >= 7 ? 2 : 1)) m = Math.max(m, 0.6);
+      }
+      return m;
+    }
+    function search(q) {
+      const toks = words(q).filter(t => !STOP.has(t)).map(stem);
+      if (!toks.length) return [];
+      const need = toks.length <= 2 ? 1 : Math.ceil(toks.length * 0.6);
+      return index.map(({ i, fields }) => {
+        let score = 0, hit = 0;
+        toks.forEach(t => {
+          let best = 0;
+          fields.forEach(([w, list]) => { best = Math.max(best, w * match(t, list)); });
+          if (best) { hit++; score += best; }
+        });
+        return { i, score: score + hit * 10, hit };
+      }).filter(r => r.hit >= need).sort((a, b) => b.score - a.score).slice(0, 30).map(r => RULES[r.i]);
+    }
+
+    const q = $("#q"), out = $("#results"), cats = $("#cats");
+    let cat = null;
+    const card = r => `<article class="rule-card"><div class="rc-head"><h3>${esc(r.title)}</h3><span class="pill">${esc(r.category || "")}</span></div>
+      <div class="rc-text">${r.text}</div>${r.page ? `<div class="rc-page">Rulebook p. ${esc(r.page)}</div>` : ""}</article>`;
+    const categories = [...new Set(RULES.map(r => r.category).filter(Boolean))];
+    function draw() {
+      const text = q.value.trim();
+      cats.innerHTML = categories.map(c => `<button class="seg${c === cat && !text ? " on" : ""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+      $$("button", cats).forEach(b => b.onclick = () => { cat = cat === b.dataset.c ? null : b.dataset.c; q.value = ""; draw(); });
+      let list;
+      if (text) list = search(text);
+      else if (cat) list = RULES.filter(r => r.category === cat).sort((a, b) => a.title.localeCompare(b.title));
+      else { out.innerHTML = ""; return; }
+      out.innerHTML = list.length ? list.map(card).join("")
+        : `<p class="muted">Nothing found for “${esc(text)}”. Try another word, e.g. a keyword printed on the card.</p>`;
+    }
+    q.value = new URLSearchParams(location.search).get("q") || "";
+    q.oninput = () => { cat = null; draw(); };
+    document.addEventListener("keydown", e => {
+      if (e.key === "/" && document.activeElement !== q) { e.preventDefault(); q.focus(); }
+      if (e.key === "Escape" && document.activeElement === q) { q.value = ""; draw(); }
+    });
+    draw();
   }
 
   // load the part's generated data file, then start

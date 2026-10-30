@@ -27,6 +27,15 @@ Opening `index.html` directly also works in Chrome. The home page lists all part
   `onScene(id)` runs when an outcome is opened. Chapter 06 uses one for the Collapsing Roof rune track,
   where the lever outcomes open doors.
 
+## Rules lookup (home page)
+
+The search box on the home page searches `data/rules.js` (`window.RULES`, about 225 cards). Each card has a
+`title`, `category`, `tags` (synonyms players might type), `text` (a short summary in our own words, simple
+HTML allowed) and `page` (the Rulebook page). The cards were written from `AOD_Rulebook-2022-1.5.pdf`, with the errata
+(`Remake Errata_1.5_(7-6).pdf`) applied and marked "(errata)". The search runs offline in the browser: it ignores
+filler words, accepts prefixes and small typos, and ranks title > tags > text. `index.html?q=burn` opens with a search
+already filled in. To add or fix an answer, edit the card in `data/rules.js`; nothing needs rebuilding.
+
 ## Folder layout
 
 ```
