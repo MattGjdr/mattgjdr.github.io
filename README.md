@@ -4,6 +4,16 @@ A local, offline website for playing the *AoD Adventure Book* campaign at the ta
 narrated story with a separate voice per character, setup and rules reference,
 interaction choices, and trackers for each adventure.
 
+## Next time: "do the next chapters"
+
+1. Check **Parts done** (bottom of this file) and take the next parts in book order: Ch09 (p. 40),
+   Interlude 02 (p. 43), Ch10 (p. 44), Ch11 (48), Ch12 (52), Ch13 (56), Interlude 03 (60), Ch14 (62),
+   Ch15 (66), Ch16 (70), Ch17 (74), Ch18 (80).
+2. You need the three PDFs (not in the repo) in `~/Downloads`, and you need to run `tools/setup_tts.sh` once per machine.
+3. Follow **Adding a new part** below, once per part. Doing one part per helper agent in parallel works well.
+4. Run `python3 tools/check_part.py <id>`, then open `index.html?c=<id>` and look at every tab.
+5. Add the part to **Parts done**, then commit and push. The site is published at https://mattgjdr.github.io.
+
 ## Run it
 
 ```
@@ -49,6 +59,7 @@ img/<id>-setup.jpg                 setup map (optional)
 tools/extract_pages.py             PDF → reading-order text with [H]/[I]/[B] tags
 tools/build_audio.py               JSON → narration MP3s (Piper neural TTS, local) + data/<id>.js
 tools/setup_tts.sh                 one-time: venv with piper-tts + pymupdf, downloads voice models
+tools/check_part.py                checks a part (links, speakers, audio, images) before committing
 ```
 
 ## Adding a new part (the recipe)
@@ -84,7 +95,7 @@ Sources in `~/Downloads` (PDF page numbers equal the printed page numbers):
    exactly. Only remove the quotation marks around dialogue (the app adds them back).
 6. **Render audio:** `$V -I tools/build_audio.py data/<id>.json --voices ~/.cache/aod-tts/voices`.
    Clips are cached by text + voice settings, so editing one line re-renders only that line.
-7. **Register** the part in `data/parts.js`. Then open `index.html?c=<id>` and check that every tab
+7. **Register** the part in `data/parts.js`, run `python3 tools/check_part.py <id>`, then open `index.html?c=<id>` and check that every tab
    renders.
 
 ## Part JSON format
