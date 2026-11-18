@@ -18,4 +18,13 @@ for v in en_US/ryan/high/en_US-ryan-high \
   done
   echo "voice ok: $n"
 done
-echo "Done. Python: $ROOT/venv/bin/python   Voices: $ROOT/voices"
+# Kokoro-82M (better intonation; used by parts whose cast has "engine": "kokoro", e.g. ch08)
+[ -x "$ROOT/venv-kokoro/bin/python" ] || python3 -m venv "$ROOT/venv-kokoro"
+"$ROOT/venv-kokoro/bin/pip" install -q kokoro-onnx soundfile piper-tts
+mkdir -p "$ROOT/kokoro"
+K=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
+for f in kokoro-v1.0.onnx voices-v1.0.bin; do
+  [ -s "$ROOT/kokoro/$f" ] || curl -sfL -o "$ROOT/kokoro/$f" "$K/$f"
+done
+echo "kokoro ok"
+echo "Done. Python: $ROOT/venv-kokoro/bin/python (Piper + Kokoro)   Voices: $ROOT/voices, $ROOT/kokoro"

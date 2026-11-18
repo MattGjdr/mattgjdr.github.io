@@ -10,35 +10,34 @@ window.CHAPTER = {
  "cast": {
   "narrator": {
    "name": "Narrator",
-   "voice": "en_US-ryan-high",
-   "length_scale": 1.12,
-   "pitch": 1.0
+   "engine": "kokoro",
+   "voice": "bm_george",
+   "speed": 0.95
   },
   "tharmagar": {
    "name": "Tharmagar",
-   "voice": "en_GB-alan-medium",
-   "length_scale": 1.12,
-   "pitch": 0.93
+   "engine": "kokoro",
+   "voice": "bm_lewis",
+   "speed": 0.9
   },
   "rules": {
    "name": "Rules",
-   "voice": "en_US-lessac-high",
-   "length_scale": 1.0,
-   "pitch": 1.0
+   "engine": "kokoro",
+   "voice": "af_heart",
+   "speed": 1.0
   },
   "lakin": {
    "name": "King James Lakin",
-   "voice": "en_GB-northern_english_male-medium",
-   "length_scale": 1.15,
-   "pitch": 0.82,
+   "engine": "kokoro",
+   "voice": "am_onyx",
+   "speed": 0.9,
    "fx": "ghost"
   },
   "volin": {
    "name": "Jim Volin, the archer",
-   "voice": "en_GB-semaine-medium",
-   "speaker_id": 2,
-   "length_scale": 1.0,
-   "pitch": 1.0
+   "engine": "kokoro",
+   "voice": "am_fenrir",
+   "speed": 1.0
   }
  },
  "checklist": [
@@ -106,79 +105,79 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "The creatures grunt louder and louder, signaling that they are closer to finding a way to you. Tharmagar, however, remains euphoric, unstoppable in asking questions. For each new answer, memories from his life’s work slowly come back to the sage—a name recalled here, a story unburied there...",
-      "audio": "audio/ch08/intro_00_00_narrator_0fdfb99bbd.mp3"
+      "audio": "audio/ch08/intro_00_00_narrator_be5383ed67.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Nonetheless, there wasn’t any mention of the Undead King.",
-      "audio": "audio/ch08/intro_01_00_narrator_b3738b510f.mp3"
+      "audio": "audio/ch08/intro_01_00_narrator_cd1f5efea1.mp3"
      }
     ],
     [
      {
       "who": "lakin",
       "text": "The only Varatash sovereign I know is the Black Prince, and I never found him on the battlefield. Besides, the elvish ballads always describe him as a proud knight, donning heavy armor and wielding a sword with unparalleled skill. Of him, to have the power over death itself, that I never heard. But bear in mind that they were the ones who brought necromancy to this world,",
-      "audio": "audio/ch08/intro_02_00_lakin_322c174d27.mp3"
+      "audio": "audio/ch08/intro_02_00_lakin_d394c700c5.mp3"
      },
      {
       "who": "narrator",
       "text": "the King explains, as if he was talking to someone of his time.",
-      "audio": "audio/ch08/intro_02_01_narrator_a603ce2554.mp3"
+      "audio": "audio/ch08/intro_02_01_narrator_a06cae65e9.mp3"
      }
     ],
     [
      {
       "who": "tharmagar",
       "text": "Prince... King...",
-      "audio": "audio/ch08/intro_03_00_tharmagar_52fafcfec8.mp3"
+      "audio": "audio/ch08/intro_03_00_tharmagar_134b5226bf.mp3"
      },
      {
       "who": "narrator",
       "text": "Tharmagar considered.",
-      "audio": "audio/ch08/intro_03_01_narrator_49e6613d65.mp3"
+      "audio": "audio/ch08/intro_03_01_narrator_1d78cc631d.mp3"
      },
      {
       "who": "tharmagar",
       "text": "He may have been someone that he’s not anymore. A prince who inherited the crown? One who set the sword aside with the coming of age? Do those things even age?",
-      "audio": "audio/ch08/intro_03_02_tharmagar_61faa519f7.mp3"
+      "audio": "audio/ch08/intro_03_02_tharmagar_087625423d.mp3"
      },
      {
       "who": "narrator",
       "text": "But before you can explore the subject, the first wave of the expected Creatures of Darkness arrive, pouring from the pathways like ants from an anthill.",
-      "audio": "audio/ch08/intro_03_03_narrator_b5b1562111.mp3"
+      "audio": "audio/ch08/intro_03_03_narrator_02f4cd6a2b.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "And that was only a stray patrol.",
-      "audio": "audio/ch08/intro_04_00_narrator_5beacfacde.mp3"
+      "audio": "audio/ch08/intro_04_00_narrator_e8ac7264d6.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Prevailing after another long round of battle, you know that it is time to go, but the sage is reluctant. He is eager to discover the link between the Undead King and the Darkness, sure that he is not a mere necromant.",
-      "audio": "audio/ch08/intro_05_00_narrator_a9a7f7f317.mp3"
+      "audio": "audio/ch08/intro_05_00_narrator_5235472dce.mp3"
      }
     ],
     [
      {
       "who": "lakin",
       "text": "I don’t know, Master Tharmagar. All I can say is that the Varatash are masters of themselves. If the Darkness follows this so-called king of yours, it’s because he served it before,",
-      "audio": "audio/ch08/intro_06_00_lakin_4f2645e928.mp3"
+      "audio": "audio/ch08/intro_06_00_lakin_9ca9178ec2.mp3"
      },
      {
       "who": "narrator",
       "text": "the Dwarven King answers hastily, perceiving that the hall was trembling and the ceiling crumbling in anticipation of the tide that was coming through the hallways.",
-      "audio": "audio/ch08/intro_06_01_narrator_ef576b4df8.mp3"
+      "audio": "audio/ch08/intro_06_01_narrator_2bc502f296.mp3"
      },
      {
       "who": "lakin",
       "text": "Go! Through that door! You will pass through some galleries, and then keep going ahead, always up. You will reach the surface! The path won’t be easy, but death is certain if you remain here. Now, quick! Tell me how I can help you one last time!",
-      "audio": "audio/ch08/intro_06_02_lakin_0153792017.mp3"
+      "audio": "audio/ch08/intro_06_02_lakin_b020e62ec1.mp3"
      }
     ]
    ]
@@ -193,7 +192,7 @@ window.CHAPTER = {
      {
       "who": "rules",
       "text": "After you have completed the Setup, start the adventure by opening the Book of Interactions to page 20. As a group, you and your partners must choose one option and proceed to its resolution. In case of a split decision, the Party Leader has the power to choose which of the tied choices will be taken.",
-      "audio": "audio/ch08/start_00_00_rules_9d8ff3eb5b.mp3"
+      "audio": "audio/ch08/start_00_00_rules_ce9953beb0.mp3"
      }
     ]
    ],
@@ -214,40 +213,40 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "And there you are, fighting another round in the endless battle against the Darkness. Although your body is exhausted, your determination still stands firm. At this point, whether because you better understand the fate of those captured by the enemy or because you have just became used to it, slaying a Creature of Darkness becomes easier and easier.",
-      "audio": "audio/ch08/guardian_00_00_narrator_1364cac3df.mp3"
+      "audio": "audio/ch08/guardian_00_00_narrator_c987546bce.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "So, one kill after another, until you find yourself in front of the last of the Creatures. At that very moment, a buzz runs past your ears and an arrow hits your target, right between the eyes, taking the last blow from your grasp.",
-      "audio": "audio/ch08/guardian_01_00_narrator_a93fc7a648.mp3"
+      "audio": "audio/ch08/guardian_01_00_narrator_64a8d692c4.mp3"
      }
     ],
     [
      {
       "who": "volin",
       "text": "You don’t seem akin to these monsters. Therefore, I’ll give you the chance to introduce yourselves... Who are you in the service of?",
-      "audio": "audio/ch08/guardian_02_00_volin_5d249ed2b7.mp3"
+      "audio": "audio/ch08/guardian_02_00_volin_e4d6281c5c.mp3"
      },
      {
       "who": "narrator",
       "text": "threatens a voice.",
-      "audio": "audio/ch08/guardian_02_01_narrator_4ced629c61.mp3"
+      "audio": "audio/ch08/guardian_02_01_narrator_1644328ab4.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Emerging from the shadows with a dramatic entrance, showing firmness and—unlike you—without the smallest sign of being tired, a man dressed as a ranger captures all of your attention as he readies another arrow from his quiver. Even more arresting is his strange, cadaveric arm...",
-      "audio": "audio/ch08/guardian_03_00_narrator_d81e53ebee.mp3"
+      "audio": "audio/ch08/guardian_03_00_narrator_3916872b98.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The “Special Rule – Crumbling Path” is resolved and the current turn ends immediately. Then, move the Initiative Marker to the next card on the Initiative Track (but do not start that turn) and open the Book of Interactions to page 21. As a group, you and your partners must choose one option and proceed to its resolution. In case of a split decision, the Party Leader has the power to choose which of the tied choices will be taken.",
-      "audio": "audio/ch08/guardian_04_00_rules_7746e74c0f.mp3"
+      "audio": "audio/ch08/guardian_04_00_rules_8485ae417c.mp3"
      }
     ]
    ],
@@ -267,54 +266,54 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "The archer’s body dissolves, scorched by flames that painlessly burn him, if such a thing is possible. Where once the man was, all that is left is a pile of ashes and a golden bracelet which, as if it was alive, jumps to your left wrist and closes with a pop. It is a perfect fit, and for some reason, you know that it will never leave you...",
-      "audio": "audio/ch08/end-bracelet_00_00_narrator_bfe8437dfc.mp3"
+      "audio": "audio/ch08/end-bracelet_00_00_narrator_ac22c097d8.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "You just need a few tries to realize it.",
-      "audio": "audio/ch08/end-bracelet_01_00_narrator_6d25ac0c21.mp3"
+      "audio": "audio/ch08/end-bracelet_01_00_narrator_f5f7ddf46b.mp3"
      }
     ],
     [
      {
       "who": "tharmagar",
       "text": "We can worry ourselves about that later, my fellow. Time is pressing. The tremors haven’t stopped, and we haven’t reached the surface,",
-      "audio": "audio/ch08/end-bracelet_02_00_tharmagar_b7b8cd6cc2.mp3"
+      "audio": "audio/ch08/end-bracelet_02_00_tharmagar_2f659000c0.mp3"
      },
      {
       "who": "narrator",
       "text": "the sage draws your attention to the plight you’re facing, perceiving that you are glancing at the artifact with a strange look of wonder and fear.",
-      "audio": "audio/ch08/end-bracelet_02_01_narrator_890b9fda66.mp3"
+      "audio": "audio/ch08/end-bracelet_02_01_narrator_f45c291643.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "But he is right. Now isn’t the time to worry about it.",
-      "audio": "audio/ch08/end-bracelet_03_00_narrator_5e6874af19.mp3"
+      "audio": "audio/ch08/end-bracelet_03_00_narrator_82907b323e.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Nodding, you both move ahead. However, the burden of Tharmagar’s old age is evident—a fact he tried so much to hide from you—and he can barely keep up the pace. The sage is already trespassing his limits, and you start to worry if he will manage to make it to the end...",
-      "audio": "audio/ch08/end-bracelet_04_00_narrator_32a4fa3c6b.mp3"
+      "audio": "audio/ch08/end-bracelet_04_00_narrator_e14377adcd.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "If any Hero has the “Cursebreaker” Status on their Campaign Log, they take the Cursed Bracelet card from the Adventure deck. If no Hero has it, the Party Leader takes it instead. Then, the Hero who took it must write down the “Guardian’s Curse” Outcome on their Campaign Log (Outcomes remain in effect for the entire Campaign unless some other effect changes them) and equip the Cursed Bracelet immediately. As long as that Hero has this Outcome on their Campaign Log, they cannot unequip the Cursed Bracelet.",
-      "audio": "audio/ch08/end-bracelet_05_00_rules_aa4c03ca66.mp3"
+      "audio": "audio/ch08/end-bracelet_05_00_rules_a3666c5d09.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The adventure ends here. You may now proceed to the Camp Phase and read “After the Adventure – The Final Ascent”.",
-      "audio": "audio/ch08/end-bracelet_06_00_rules_1ce71067aa.mp3"
+      "audio": "audio/ch08/end-bracelet_06_00_rules_bd47d2920f.mp3"
      }
     ]
    ],
@@ -333,58 +332,58 @@ window.CHAPTER = {
      {
       "who": "volin",
       "text": "If you do not mind a last word...",
-      "audio": "audio/ch08/end-notover_00_00_volin_2ec0f75c18.mp3"
+      "audio": "audio/ch08/end-notover_00_00_volin_2882507d9c.mp3"
      },
      {
       "who": "narrator",
       "text": "the archer asks. He doesn’t seem to be concerned at all with the imminent collapse of these halls.",
-      "audio": "audio/ch08/end-notover_00_01_narrator_515dbd8224.mp3"
+      "audio": "audio/ch08/end-notover_00_01_narrator_57ed2ef27c.mp3"
      },
      {
       "who": "volin",
       "text": "We are in the catacombs of a Sanctuary built long, long ago, honoring the Six. Being one of the few places like it that still stands, it has always attracted the attention of pilgrims from everywhere, which made it natural to establish a village at the foot of the mountain,",
-      "audio": "audio/ch08/end-notover_00_02_volin_54888056ce.mp3"
+      "audio": "audio/ch08/end-notover_00_02_volin_bc07e97f72.mp3"
      },
      {
       "who": "narrator",
       "text": "he continues.",
-      "audio": "audio/ch08/end-notover_00_03_narrator_e4f1f5c588.mp3"
+      "audio": "audio/ch08/end-notover_00_03_narrator_bbd8bdcbb9.mp3"
      }
     ],
     [
      {
       "who": "volin",
       "text": "I managed to slay all of the monstrosities that I found below ground, but I wasn’t able to do anything about those that are on the surface...",
-      "audio": "audio/ch08/end-notover_01_00_volin_93dfe681db.mp3"
+      "audio": "audio/ch08/end-notover_01_00_volin_575f536787.mp3"
      },
      {
       "who": "narrator",
       "text": "he says, and you can imagine what request will follow:",
-      "audio": "audio/ch08/end-notover_01_01_narrator_ea11e06cc1.mp3"
+      "audio": "audio/ch08/end-notover_01_01_narrator_68eb9049e3.mp3"
      },
      {
       "who": "volin",
       "text": "Hezechia is a peaceful place, distant, with few people... They won’t be able to survive without help from capable people like you,",
-      "audio": "audio/ch08/end-notover_01_02_volin_d9b08557ea.mp3"
+      "audio": "audio/ch08/end-notover_01_02_volin_a1b1512423.mp3"
      },
      {
       "who": "narrator",
       "text": "he concludes, making a masked solicitation.",
-      "audio": "audio/ch08/end-notover_01_03_narrator_13d246effb.mp3"
+      "audio": "audio/ch08/end-notover_01_03_narrator_73c35b708a.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Nodding, you both follow his hint. However, the burden of Tharmagar’s old age is evident—a fact he tried so much to hide from you—and he can barely keep up the pace. The sage is already trespassing his limits, and you start to worry if he will manage to make it to the end...",
-      "audio": "audio/ch08/end-notover_02_00_narrator_ab9785a32f.mp3"
+      "audio": "audio/ch08/end-notover_02_00_narrator_c716d8eae1.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The adventure ends here. You may now proceed to the Camp Phase and read “After the Adventure – The Final Ascent”.",
-      "audio": "audio/ch08/end-notover_03_00_rules_1ce71067aa.mp3"
+      "audio": "audio/ch08/end-notover_03_00_rules_bd47d2920f.mp3"
      }
     ]
    ],
@@ -403,56 +402,56 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "So you proceed through galleries, halls, and stairways with thousands of steps, under the constant threat of being swallowed by rolling avalanches of dust, pebbles, and murderous tendrils. Tharmagar’s strength is faltering, and in those moments when your legs are most required, you carry him on your shoulders, always escaping a tragic fate only narrowly.",
-      "audio": "audio/ch08/final_00_00_narrator_5c5a46bd1a.mp3"
+      "audio": "audio/ch08/final_00_00_narrator_982ffa5d36.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "You even imagine that the end of you both has arrived. And not only once or twice. However, powered by the persevering instinct that every living creature has inside of it, deep down, that makes the impossible possible in order to survive, you pass through the labyrinthine paths amidst dust and confusion, blind as moles.",
-      "audio": "audio/ch08/final_01_00_narrator_32f9c79c6a.mp3"
+      "audio": "audio/ch08/final_01_00_narrator_c9f1ad3704.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Guiding yourselves like those creatures—or merely by chance—you take every turn that, somehow, leads you towards the surface, until you reach a place of corridors and halls crammed with sarcophagi: a catacomb where, at last, the tremors vanish and you have the feeling of treading over steady ground for the first time in a long time.",
-      "audio": "audio/ch08/final_02_00_narrator_f7c00c5ecd.mp3"
+      "audio": "audio/ch08/final_02_00_narrator_4b141d33fa.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Fresh corpses of some Creatures of Darkness lie everywhere, mingled with the butchered remains of people dressed as priests. The macabre scene repeats itself in the Great Hall of the Sanctuary, just a flight of stairs above, where thick columns of stone hold an arched ceiling more than three stories tall.",
-      "audio": "audio/ch08/final_03_00_narrator_f24d66661e.mp3"
+      "audio": "audio/ch08/final_03_00_narrator_15c2fb8b3d.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Resting against an old altarpiece topped by an animal statue destroyed above its ankles, the sage finally gives in, despite the fact that you are the winners. He lets himself enjoy a fresh night breeze running through the hall, howling like a mountain wolf.",
-      "audio": "audio/ch08/final_04_00_narrator_9968c61bfa.mp3"
+      "audio": "audio/ch08/final_04_00_narrator_6b84b1a385.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "A feeling that you had forgotten just how it felt.",
-      "audio": "audio/ch08/final_05_00_narrator_6e8c9172ff.mp3"
+      "audio": "audio/ch08/final_05_00_narrator_868c10d9b2.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "However, the wind doesn’t bring only relief, but also the desperate screams of a village that is suffering its worst nightmare, just a few hundred yards down the mountain...",
-      "audio": "audio/ch08/final_06_00_narrator_587df36504.mp3"
+      "audio": "audio/ch08/final_06_00_narrator_6a16b3ff71.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "Rewards: Each player chooses and unlocks a level 1 Hero Skill or Dungeon Role Skill for their Hero.",
-      "audio": "audio/ch08/final_07_00_rules_94486f7d57.mp3"
+      "audio": "audio/ch08/final_07_00_rules_43de030146.mp3"
      }
     ]
    ]
@@ -466,19 +465,19 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "Feeling fatigued by the succession of battles, you ask him for help to deal with the next wave of enemies. Consenting with a nod of his ghostly head, the Dwarven King takes a stand at the rubble bridge and howls the mightiest roar you’ve ever heard, miraculously making his spectral silhouette flesh again.",
-      "audio": "audio/ch08/i93_00_00_narrator_a203816ba2.mp3"
+      "audio": "audio/ch08/i93_00_00_narrator_dea74e94bd.mp3"
      },
      {
       "who": "lakin",
       "text": "Now go forth, my fellows! Go forth and remember this, my last stand!",
-      "audio": "audio/ch08/i93_00_01_lakin_9fe43743d1.mp3"
+      "audio": "audio/ch08/i93_00_01_lakin_bb93df29c1.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Party Leader gains FOCUS 2. Remove Bridge BR2-B, Maps C2-F, C5-B, B2-F, and the Dungeon Tray 02 that is now empty from the board, along with any Monsters on top of them. Consider those Monsters defeated.",
-      "audio": "audio/ch08/i93_01_00_rules_aa197d19ba.mp3"
+      "audio": "audio/ch08/i93_01_00_rules_a57d9add21.mp3"
      }
     ]
    ]
@@ -492,48 +491,48 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "You ask the Dwarven King to let you pass through the heavy iron door that bears his family name.",
-      "audio": "audio/ch08/i94_00_00_narrator_c6fceba96f.mp3"
+      "audio": "audio/ch08/i94_00_00_narrator_0f8e846eba.mp3"
      },
      {
       "who": "lakin",
       "text": "The Forgotten Halls of Xereth are not pathways, my fellows, but a fate. One that is better to avoid. Besides, even if I should wish to, I cannot open the door right now...",
-      "audio": "audio/ch08/i94_00_01_lakin_b0d49e7c5e.mp3"
+      "audio": "audio/ch08/i94_00_01_lakin_54394ef4b1.mp3"
      },
      {
       "who": "narrator",
       "text": "he says, turning his attention completely to you...",
-      "audio": "audio/ch08/i94_00_02_narrator_b25db746d4.mp3"
+      "audio": "audio/ch08/i94_00_02_narrator_fe84c70b1e.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "If any Hero has the Dwarven King’s Sword Adventure Item (stored in their bag or equipped), read Interaction #97. Otherwise, read the resolution below:",
-      "audio": "audio/ch08/i94_01_00_rules_ccfc8db866.mp3"
+      "audio": "audio/ch08/i94_01_00_rules_21d8e5757c.mp3"
      }
     ],
     [
      {
       "who": "lakin",
       "text": "My treasure most dear and precious, the sword that is the symbol of my royal birthright, was stolen from me just before you arrived. That was why I woke up from my slumber. It is the only key that may open that keyhole,",
-      "audio": "audio/ch08/i94_02_00_lakin_6b5667f649.mp3"
+      "audio": "audio/ch08/i94_02_00_lakin_77c9245e21.mp3"
      },
      {
       "who": "narrator",
       "text": "he explains, and Tharmagar and you instantly connect the dots in your heads: the tomb robber!",
-      "audio": "audio/ch08/i94_02_01_narrator_6616398a69.mp3"
+      "audio": "audio/ch08/i94_02_01_narrator_8fcb7c2959.mp3"
      },
      {
       "who": "lakin",
       "text": "However, I will not let you down. If I cannot help you with this door, at least something from my royal treasure should be of use...",
-      "audio": "audio/ch08/i94_02_02_lakin_559a73c962.mp3"
+      "audio": "audio/ch08/i94_02_02_lakin_3d7b19c6bb.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "Place 2 Chest tokens on Map B3-F as indicated in the following illustration. These Chests are safe and the Heroes don’t need to roll the Trap Die to open them.",
-      "audio": "audio/ch08/i94_03_00_rules_bab60a42cf.mp3"
+      "audio": "audio/ch08/i94_03_00_rules_17bfc74386.mp3"
      }
     ]
    ],
@@ -551,48 +550,48 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "Curious about the mysterious “most precious treasure,” you ask the Dwarven King what it was.",
-      "audio": "audio/ch08/i95_00_00_narrator_3bc4cfadd3.mp3"
+      "audio": "audio/ch08/i95_00_00_narrator_9cdb3c9ba4.mp3"
      },
      {
       "who": "lakin",
       "text": "What could it be, if not the sword of my ancestors, passed down from father to son since the first of my dynasty?",
-      "audio": "audio/ch08/i95_00_01_lakin_3a672a15f3.mp3"
+      "audio": "audio/ch08/i95_00_01_lakin_4342d07dbd.mp3"
      },
      {
       "who": "narrator",
       "text": "he explains, turning his attention completely to you...",
-      "audio": "audio/ch08/i95_00_02_narrator_a1eec08b32.mp3"
+      "audio": "audio/ch08/i95_00_02_narrator_3d8357e7b4.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "If any Hero has the Dwarven King’s Sword Adventure Item (stored in their bag or equipped), read Interaction #97. Otherwise, read the resolution below:",
-      "audio": "audio/ch08/i95_01_00_rules_ccfc8db866.mp3"
+      "audio": "audio/ch08/i95_01_00_rules_21d8e5757c.mp3"
      }
     ],
     [
      {
       "who": "lakin",
       "text": "And just as it was stolen from me, I woke from my slumber. I know that it is still there, but after all we spoke of, I fear that I will not be able to recover it anymore,",
-      "audio": "audio/ch08/i95_02_00_lakin_f11cac2837.mp3"
+      "audio": "audio/ch08/i95_02_00_lakin_551057f788.mp3"
      },
      {
       "who": "narrator",
       "text": "Lakin concludes as he draws from behind his throne a glittering object with his spectral hands.",
-      "audio": "audio/ch08/i95_02_01_narrator_a62c0faa19.mp3"
+      "audio": "audio/ch08/i95_02_01_narrator_a6b9c9b874.mp3"
      },
      {
       "who": "lakin",
       "text": "This, by the way, is its scabbard. A true art-piece of my folk, and an artifact on its own merit.",
-      "audio": "audio/ch08/i95_02_02_lakin_c5a37da82d.mp3"
+      "audio": "audio/ch08/i95_02_02_lakin_5858db5da3.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Hero of the Party Leader’s choice takes the Undermountain Scabbard card from the Adventure deck.",
-      "audio": "audio/ch08/i95_03_00_rules_59b0458121.mp3"
+      "audio": "audio/ch08/i95_03_00_rules_bfee4bf727.mp3"
      }
     ]
    ],
@@ -610,19 +609,19 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "Not wanting to waste any time, or to abuse the generous hospitality of the Dwarven King, you ask him for anything he can give you that might be useful in the journey ahead.",
-      "audio": "audio/ch08/i96_00_00_narrator_a6977e2971.mp3"
+      "audio": "audio/ch08/i96_00_00_narrator_2cfcb16e5c.mp3"
      },
      {
       "who": "lakin",
       "text": "Anything within my power, my fellows. Quick, take what you need, and brace yourselves: the fight will be hard!",
-      "audio": "audio/ch08/i96_00_01_lakin_15b792c8c5.mp3"
+      "audio": "audio/ch08/i96_00_01_lakin_63c7d74361.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Party Leader gains FOCUS 2 and then searches the Chest deck for a card of their choice and gives it to a Hero in the party.",
-      "audio": "audio/ch08/i96_01_00_rules_137c24c1b7.mp3"
+      "audio": "audio/ch08/i96_01_00_rules_988ff52702.mp3"
      }
     ]
    ]
@@ -637,24 +636,24 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "...but the ghost has eyes only for the beautiful sword in your possession.",
-      "audio": "audio/ch08/i97_00_00_narrator_fc3c9980c3.mp3"
+      "audio": "audio/ch08/i97_00_00_narrator_9c6201c2a6.mp3"
      },
      {
       "who": "lakin",
       "text": "Wait... But that is my sword, I’m sure! What are you doing with it? Don’t tell me that you...",
-      "audio": "audio/ch08/i97_00_01_lakin_25ab60b53a.mp3"
+      "audio": "audio/ch08/i97_00_01_lakin_d11083c209.mp3"
      },
      {
       "who": "narrator",
       "text": "he muses, but you promptly explain, undoing the misunderstanding: You didn’t steal the sword—or better: not from him.",
-      "audio": "audio/ch08/i97_00_02_narrator_3e605cb01c.mp3"
+      "audio": "audio/ch08/i97_00_02_narrator_527c6b6267.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "You face a dilemma: As a group, you and your partners must choose one option and proceed to its resolution. In case of a split decision, the Party Leader has the power to choose which of the tied choices will be taken.",
-      "audio": "audio/ch08/i97_01_00_rules_d72bb20d7e.mp3"
+      "audio": "audio/ch08/i97_01_00_rules_5139b82e3b.mp3"
      }
     ]
    ],
@@ -672,19 +671,19 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "Having found its true owner, you offer to give the sword back to the Dwarven King.",
-      "audio": "audio/ch08/i98_00_00_narrator_e6824c1357.mp3"
+      "audio": "audio/ch08/i98_00_00_narrator_69d0709c12.mp3"
      },
      {
       "who": "lakin",
       "text": "You honor me, fellow, and I strongly thank you. However, if I take it now, my spirit would fall again into slumber, and I still have one last battle to fight. So keep it with you. I will be happy to know it is in good hands!",
-      "audio": "audio/ch08/i98_00_01_lakin_4263445128.mp3"
+      "audio": "audio/ch08/i98_00_01_lakin_07717a0ba3.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Party Leader gains FOCUS 2 and writes down “The Honorable Gesture” Status on their Campaign Log. As long as they have it (Statuses are removed during the next Camp Phase), whenever they take a Recall Action, they also gain FOCUS 1.",
-      "audio": "audio/ch08/i98_01_00_rules_3f27816aa8.mp3"
+      "audio": "audio/ch08/i98_01_00_rules_643ac5f03c.mp3"
      }
     ]
    ]
@@ -698,14 +697,14 @@ window.CHAPTER = {
      {
       "who": "lakin",
       "text": "Nevertheless, the sword doesn’t matter to me anymore, my fellow. I needed it to go back to my rest, but I still have one last battle to fight. So keep it with you. I will be happy to know it is in good hands!",
-      "audio": "audio/ch08/i99_00_00_lakin_2ff2084d4d.mp3"
+      "audio": "audio/ch08/i99_00_00_lakin_8b9d31592e.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Party Leader gains FOCUS 2 and writes down the “Play Dumb” Status on their Campaign Log. As long as they have it (Statuses are removed during the next Camp Phase), they may choose not to gain any Curse Cubes when they take a Recall Action.",
-      "audio": "audio/ch08/i99_01_00_rules_404225236f.mp3"
+      "audio": "audio/ch08/i99_01_00_rules_b0688edf93.mp3"
      }
     ]
    ]
@@ -719,21 +718,21 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "Feeling insulted, you threaten the man back, demanding the respect that is due to a battle-hardened adventurer like you. Without even listening to your demand to the end, the archer shoots you, fully hitting your chest. Then, releasing the corrupted, mysterious powers within him, his body ignites into an emerald flame that burns without causing any pain...",
-      "audio": "audio/ch08/i100_00_00_narrator_e96b8f3611.mp3"
+      "audio": "audio/ch08/i100_00_00_narrator_287c630bbe.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Party Leader gains FOCUS 2 and takes 4 damage (preventable). Additionally, if they follow the Path of Strength, they also gain SHIELD 4 OR recover all of their Health, their choice.",
-      "audio": "audio/ch08/i100_01_00_rules_21c0ae1c3b.mp3"
+      "audio": "audio/ch08/i100_01_00_rules_45ce3e31f0.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "Then, summon the Jim Volin Scenario Monster as a Commander with CP 3+Players (draw the appropriate number of Commander Attack cards as normal). Replace the Interaction token with a Skeleton Archer miniature to represent him. When the Corrupted Guardian is defeated, read “End of the Adventure – The Cursed Bracelet” on page 39.",
-      "audio": "audio/ch08/i100_02_00_rules_498d49d0c8.mp3"
+      "audio": "audio/ch08/i100_02_00_rules_3905392750.mp3"
      }
     ]
    ],
@@ -751,34 +750,34 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "You show him your volunteer badge, explaining your link to Tharmagar and your escort mission.",
-      "audio": "audio/ch08/i101_00_00_narrator_b1b17d14e3.mp3"
+      "audio": "audio/ch08/i101_00_00_narrator_a1f9065e36.mp3"
      },
      {
       "who": "volin",
       "text": "It seems to me, however, that you are a little far from the road to Valarai, aren’t you?",
-      "audio": "audio/ch08/i101_00_01_volin_fef5feb748.mp3"
+      "audio": "audio/ch08/i101_00_01_volin_4ab2a7914c.mp3"
      },
      {
       "who": "narrator",
       "text": "the archer questions, examining the piece’s details.",
-      "audio": "audio/ch08/i101_00_02_narrator_2d02d9e67c.mp3"
+      "audio": "audio/ch08/i101_00_02_narrator_0322ff8358.mp3"
      },
      {
       "who": "volin",
       "text": "However, my job here is prevent the entrance of curious people and prevent the monsters from leaving—not the opposite. Thus, you have my blessing to proceed in peace,",
-      "audio": "audio/ch08/i101_00_03_volin_30fcd9ea38.mp3"
+      "audio": "audio/ch08/i101_00_03_volin_b381ca7531.mp3"
      },
      {
       "who": "narrator",
       "text": "he continues, whispering a prayer over the badge.",
-      "audio": "audio/ch08/i101_00_04_narrator_729c73f2a1.mp3"
+      "audio": "audio/ch08/i101_00_04_narrator_6d73b914d0.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Party Leader writes down the “Blessing of the Guardian” Aura on their Campaign Log. As long as they have it (Auras are removed when you receive a Trauma Cube or another Aura), whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain SHIELD 2. Then, read “End of the Adventure – This Is Not Over Yet” on page 39.",
-      "audio": "audio/ch08/i101_01_00_rules_77449a02a8.mp3"
+      "audio": "audio/ch08/i101_01_00_rules_5c6df589f0.mp3"
      }
     ]
    ],
@@ -796,63 +795,63 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "You introduce yourselves as lost adventures who, after a long journey and many battles, encountered the Dwarven King, James Lakin, and were pointed in this direction by him.",
-      "audio": "audio/ch08/i102_00_00_narrator_6c2a5bb253.mp3"
+      "audio": "audio/ch08/i102_00_00_narrator_3148eda9db.mp3"
      },
      {
       "who": "volin",
       "text": "The patriarch? You’ve met him?",
-      "audio": "audio/ch08/i102_00_01_volin_96f9f06472.mp3"
+      "audio": "audio/ch08/i102_00_01_volin_f42802d0d3.mp3"
      },
      {
       "who": "narrator",
       "text": "the man lowers his bow, changing the tone of his speech. You swear that you even see a little smile.",
-      "audio": "audio/ch08/i102_00_02_narrator_3781ed65c3.mp3"
+      "audio": "audio/ch08/i102_00_02_narrator_3f5614bf63.mp3"
      },
      {
       "who": "volin",
       "text": "Please, help me find him! He’s the only one who can help me!",
-      "audio": "audio/ch08/i102_00_03_volin_3bba73605b.mp3"
+      "audio": "audio/ch08/i102_00_03_volin_6b939c4422.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "If any Hero has the Dwarven King’s Sword Adventure Item (stored in their Bag or equipped), read Interaction #103. Otherwise, read the resolution below:",
-      "audio": "audio/ch08/i102_01_00_rules_6e32a688ce.mp3"
+      "audio": "audio/ch08/i102_01_00_rules_128623336d.mp3"
      }
     ],
     [
      {
       "who": "narrator",
       "text": "Regretfully, you explain to the archer that the patriarch is out of reach now because the paths from whence you came are buried. The information makes the man’s complexion frown again.",
-      "audio": "audio/ch08/i102_02_00_narrator_8cafb5ae92.mp3"
+      "audio": "audio/ch08/i102_02_00_narrator_bef2d26710.mp3"
      },
      {
       "who": "volin",
       "text": "I fear there’s no salvation for me anymore, then...",
-      "audio": "audio/ch08/i102_02_01_volin_9a51f6d2a0.mp3"
+      "audio": "audio/ch08/i102_02_01_volin_335625862f.mp3"
      },
      {
       "who": "narrator",
       "text": "the man mourns, crestfallen.",
-      "audio": "audio/ch08/i102_02_02_narrator_3324730000.mp3"
+      "audio": "audio/ch08/i102_02_02_narrator_988c83b179.mp3"
      },
      {
       "who": "volin",
       "text": "Anyway, it doesn’t matter now, to you. What matters is my job here is to prevent the entrance of curious people and prevent the monsters from leaving—and not the opposite. Thus, you have my blessing to proceed in peace,",
-      "audio": "audio/ch08/i102_02_03_volin_2a5ba12e6a.mp3"
+      "audio": "audio/ch08/i102_02_03_volin_160823f696.mp3"
      },
      {
       "who": "narrator",
       "text": "he continues, stepping aside to clear the way.",
-      "audio": "audio/ch08/i102_02_04_narrator_f75f3c2726.mp3"
+      "audio": "audio/ch08/i102_02_04_narrator_4a7993da7a.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Party Leader writes down the “True-hearted Blessing” Aura on their Campaign Log. As long as they have it (Auras are removed when you receive a Trauma Cube or another Aura), whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain FOCUS 1. Then, read “End of the Adventure – This Is Not Over Yet” on page 39.",
-      "audio": "audio/ch08/i102_03_00_rules_1dc8931d60.mp3"
+      "audio": "audio/ch08/i102_03_00_rules_861b0dd292.mp3"
      }
     ]
    ],
@@ -872,34 +871,34 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "You explain to the archer that the patriarch is out of reach now but, by his good fortune, the majesty of the King Under the Mountain is in your hands.",
-      "audio": "audio/ch08/i103_00_00_narrator_c21601efaf.mp3"
+      "audio": "audio/ch08/i103_00_00_narrator_664c99abdd.mp3"
      },
      {
       "who": "volin",
       "text": "Really? If you hold the King’s sword, you have the power to lift the curse that ruined my life!",
-      "audio": "audio/ch08/i103_00_01_volin_f617621091.mp3"
+      "audio": "audio/ch08/i103_00_01_volin_08bce5a147.mp3"
      },
      {
       "who": "narrator",
       "text": "he explains with the cheer of renewed hope.",
-      "audio": "audio/ch08/i103_00_02_narrator_810f15bd41.mp3"
+      "audio": "audio/ch08/i103_00_02_narrator_48fed5920b.mp3"
      },
      {
       "who": "volin",
       "text": "However, I need to warn you: my freedom won’t be free. The curse you take from me will fall upon you. Slowly, with the passing of seasons, your body will reject the light, and it won’t be long before you to start seeking refuge underground, running from it, as I have done,",
-      "audio": "audio/ch08/i103_00_03_volin_1633860742.mp3"
+      "audio": "audio/ch08/i103_00_03_volin_4873d44b61.mp3"
      },
      {
       "who": "narrator",
       "text": "he finishes with the sorrow of his fate wrought upon his voice.",
-      "audio": "audio/ch08/i103_00_04_narrator_92357f033c.mp3"
+      "audio": "audio/ch08/i103_00_04_narrator_fcfa44dad3.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "You face a dilemma: The player who holds the Dwarven King’s Sword Adventure Item must choose an option and proceed to its resolution.",
-      "audio": "audio/ch08/i103_01_00_rules_6d4b2309f8.mp3"
+      "audio": "audio/ch08/i103_01_00_rules_2417f13372.mp3"
      }
     ]
    ],
@@ -918,14 +917,14 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "With his eyes full of tears, the archer introduces himself as Jim Volin, and falls to his knees on the ground in gratitude. Reciting the words he teaches you, you extend the sword toward him, and watch in surprise as his body bursts into an emerald flame like an effigy set on fire. To your amazement, it is a fire that burns without hurting him...",
-      "audio": "audio/ch08/i104_00_00_narrator_3b107aa5b1.mp3"
+      "audio": "audio/ch08/i104_00_00_narrator_a3f674716b.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The player who holds the Dwarven King’s Sword must write down the “Cursebreaker” Outcome on their Campaign Log (Outcomes remain in effect for the entire Campaign unless some other effect changes them). Then, read “End of the Adventure – The Cursed Bracelet” on page 39.",
-      "audio": "audio/ch08/i104_01_00_rules_d1e32d59d4.mp3"
+      "audio": "audio/ch08/i104_01_00_rules_b0cc5925c1.mp3"
      }
     ]
    ],
@@ -943,34 +942,34 @@ window.CHAPTER = {
      {
       "who": "narrator",
       "text": "Thanking the man for his honesty, you lament for his fate but explain that you cannot help him because you also have a role to fulfill.",
-      "audio": "audio/ch08/i105_00_00_narrator_c6e7f379bf.mp3"
+      "audio": "audio/ch08/i105_00_00_narrator_ddc4a363f0.mp3"
      },
      {
       "who": "volin",
       "text": "I understand… Unfortunately, the price for my freedom is too high to be paid by anyone,",
-      "audio": "audio/ch08/i105_00_01_volin_58dcd3fedd.mp3"
+      "audio": "audio/ch08/i105_00_01_volin_e5e0c71aac.mp3"
      },
      {
       "who": "narrator",
       "text": "the archer concedes.",
-      "audio": "audio/ch08/i105_00_02_narrator_db0293cdcf.mp3"
+      "audio": "audio/ch08/i105_00_02_narrator_a4dc06dfb7.mp3"
      },
      {
       "who": "volin",
       "text": "However, though I regret knowing that my fate will last, I give you my blessing to proceed in peace,",
-      "audio": "audio/ch08/i105_00_03_volin_9695423ffd.mp3"
+      "audio": "audio/ch08/i105_00_03_volin_c24b31bb72.mp3"
      },
      {
       "who": "narrator",
       "text": "he says, stepping aside to clear the way.",
-      "audio": "audio/ch08/i105_00_04_narrator_6e5445c9b1.mp3"
+      "audio": "audio/ch08/i105_00_04_narrator_56cd1dab4a.mp3"
      }
     ],
     [
      {
       "who": "rules",
       "text": "The Party Leader writes down the “Blessing of Good Fortune” Aura on their Campaign Log. As long as they have it (Auras are removed when you receive a Trauma Cube or another Aura), whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also recall 1 AC. Then, read “End of the Adventure – This Is Not Over Yet” on page 39.",
-      "audio": "audio/ch08/i105_01_00_rules_1a091931e9.mp3"
+      "audio": "audio/ch08/i105_01_00_rules_a6bcf57b4c.mp3"
      }
     ]
    ],

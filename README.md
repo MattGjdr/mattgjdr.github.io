@@ -154,7 +154,23 @@ Sources in `~/Downloads` (PDF page numbers equal the printed page numbers):
 Speaker keys in `paragraphs` must exist in `cast`. A `rules` line is shown as a gold rule box and is only
 read aloud when "Also read rule text" is on.
 
-## Voice presets (Piper, local)
+## Voices: Kokoro (preferred) and Piper
+
+Since Ch08 the narration uses **Kokoro-82M**, which has much better intonation than Piper. A cast entry
+`{ "engine": "kokoro", "voice": "bm_george", "speed": 0.95 }` selects it; entries without `engine` still use Piper.
+Build with `~/.cache/aod-tts/venv-kokoro/bin/python -I tools/build_audio.py data/<id>.json` (that venv has both engines).
+Use Kokoro for new parts. Voice names: `am_*`/`af_*` are US male/female, and `bm_*`/`bf_*` are UK male/female.
+To audition voices, run `tools/voice_samples_kokoro.py voice-samples` and open `voice-samples/index.html`.
+
+| key / role                  | Kokoro voice | extra              |
+|-----------------------------|--------------|--------------------|
+| `narrator`                  | `bm_george`  | `speed 0.95`       |
+| `tharmagar` (old sage)      | `bm_lewis`   | `speed 0.9`        |
+| `rules`                     | `af_heart`   | –                  |
+| `lakin` (ghost king)        | `am_onyx`    | `speed 0.9, fx "ghost"` |
+| `volin` (archer)            | `am_fenrir`  | –                  |
+
+### Older Piper presets (Ch06, Int01, Ch07)
 
 Every voice is a Piper model in `~/.cache/aod-tts/voices`. `length_scale` above 1 is slower,
 `pitch` below 1 is deeper, and `fx: "ghost"` adds echo and a muffled tone.

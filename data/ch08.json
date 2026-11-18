@@ -8,11 +8,11 @@
   "setup": "img/ch08-setup.jpg",
   "setupNote": "Table space 84 × 56 cm, two Dungeon Trays (2). Monsters marked 2+, 3+, 4+, 5+ are placed only with that many players or more. Door 01 is between Maps C4-F and B3-F.",
   "cast": {
-    "narrator": { "name": "Narrator", "voice": "en_US-ryan-high", "length_scale": 1.12, "pitch": 1.0 },
-    "tharmagar": { "name": "Tharmagar", "voice": "en_GB-alan-medium", "length_scale": 1.12, "pitch": 0.93 },
-    "rules": { "name": "Rules", "voice": "en_US-lessac-high", "length_scale": 1.0, "pitch": 1.0 },
-    "lakin": { "name": "King James Lakin", "voice": "en_GB-northern_english_male-medium", "length_scale": 1.15, "pitch": 0.82, "fx": "ghost" },
-    "volin": { "name": "Jim Volin, the archer", "voice": "en_GB-semaine-medium", "speaker_id": 2, "length_scale": 1.0, "pitch": 1.0 }
+    "narrator": { "name": "Narrator", "engine": "kokoro", "voice": "bm_george", "speed": 0.95 },
+    "tharmagar": { "name": "Tharmagar", "engine": "kokoro", "voice": "bm_lewis", "speed": 0.9 },
+    "rules": { "name": "Rules", "engine": "kokoro", "voice": "af_heart", "speed": 1.0 },
+    "lakin": { "name": "King James Lakin", "engine": "kokoro", "voice": "am_onyx", "speed": 0.9, "fx": "ghost" },
+    "volin": { "name": "Jim Volin, the archer", "engine": "kokoro", "voice": "am_fenrir", "speed": 1.0 }
   },
   "checklist": [
     "Build the map as shown: two Dungeon Trays (2) with Maps B2-F, C5-B, C2-F, Bridge BR2-B, C4-F and B3-F, and Door 01 on C4-F.",

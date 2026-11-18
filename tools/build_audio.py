@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""Pre-render chapter narration with Piper (local neural TTS).
+"""Pre-render chapter narration with local neural TTS (Piper or Kokoro).
 
 Usage:
   <venv>/bin/python -I tools/build_audio.py data/ch06.json --voices <dir-with-onnx-models>
+
+A cast entry with "engine": "kokoro" uses Kokoro-82M ("voice": e.g. "bm_george", "speed": 0.95);
+otherwise Piper is used. Kokoro needs the venv from tools/setup_tts.sh (~/.cache/aod-tts/venv-kokoro)
+and only imports the engines the chapter actually uses.
 
 Reads the chapter JSON, renders every line with the voice of its speaker
 (see "cast"), and writes data/<id>.js which the website loads.
@@ -18,7 +22,6 @@ import sys
 import wave
 from pathlib import Path
 
-from piper import PiperVoice, SynthesisConfig
 
 
 def spoken(text):
@@ -33,7 +36,8 @@ def spoken(text):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("chapter")
-    ap.add_argument("--voices", required=True)
+    ap.add_argument("--voices", default=str(Path.home() / ".cache/aod-tts/voices"))
+    ap.add_argument("--kokoro", default=str(Path.home() / ".cache/aod-tts/kokoro"))
     args = ap.parse_args()
 
     chapter_path = Path(args.chapter).resolve()
@@ -43,11 +47,26 @@ def main():
     chapter = json.loads(chapter_path.read_text())
 
     loaded = {}
+    kokoro = []
 
     def voice(name):
+        from piper import PiperVoice
         if name not in loaded:
             loaded[name] = PiperVoice.load(str(Path(args.voices) / f"{name}.onnx"))
         return loaded[name]
+
+    def render_kokoro(cast, text, wav):
+        """Render with Kokoro; returns the sample rate."""
+        import soundfile as sf
+        if not kokoro:
+            from kokoro_onnx import Kokoro
+            m = Path(args.kokoro)
+            kokoro.append(Kokoro(str(m / "kokoro-v1.0.onnx"), str(m / "voices-v1.0.bin")))
+        v = cast["voice"]
+        audio, sr = kokoro[0].create(text, voice=v, speed=cast.get("speed", 1.0),
+                                     lang="en-gb" if v.startswith("b") else "en-us")
+        sf.write(str(wav), audio, sr)
+        return sr
 
     used = set()
     for scene in chapter["scenes"]:
@@ -62,16 +81,20 @@ def main():
                 used.add(name)
                 if not out.exists():
                     wav = audio_dir / "tmp.wav"
-                    cfg = SynthesisConfig(
-                        speaker_id=cast.get("speaker_id"),
-                        length_scale=cast.get("length_scale", 1.0),
-                        noise_scale=cast.get("noise_scale", 0.667),
-                        noise_w_scale=cast.get("noise_w_scale", 0.8),
-                    )
-                    v = voice(cast["voice"])
-                    with wave.open(str(wav), "wb") as wf:
-                        v.synthesize_wav(spoken(text), wf, syn_config=cfg)
-                    sr = v.config.sample_rate
+                    if cast.get("engine") == "kokoro":
+                        sr = render_kokoro(cast, spoken(text), wav)
+                    else:
+                        from piper import SynthesisConfig
+                        cfg = SynthesisConfig(
+                            speaker_id=cast.get("speaker_id"),
+                            length_scale=cast.get("length_scale", 1.0),
+                            noise_scale=cast.get("noise_scale", 0.667),
+                            noise_w_scale=cast.get("noise_w_scale", 0.8),
+                        )
+                        v = voice(cast["voice"])
+                        with wave.open(str(wav), "wb") as wf:
+                            v.synthesize_wav(spoken(text), wf, syn_config=cfg)
+                        sr = v.config.sample_rate
                     pitch = cast.get("pitch", 1.0)
                     # Lower/raise pitch, then compensate tempo so speed stays the same.
                     af = (f"asetrate={int(sr * pitch)},aresample=44100,atempo={1 / pitch:.4f},"
