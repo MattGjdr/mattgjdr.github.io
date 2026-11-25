@@ -6,8 +6,7 @@ interaction choices, and trackers for each adventure.
 
 ## Next time: "do the next chapters"
 
-1. Check **Parts done** (bottom of this file) and take the next parts in book order: Ch09 (p. 40),
-   Interlude 02 (p. 43), Ch10 (p. 44), Ch11 (48), Ch12 (52), Ch13 (56), Interlude 03 (60), Ch14 (62),
+1. Check **Parts done** (bottom of this file) and take the next parts in book order: Ch10 (p. 44), Ch11 (48), Ch12 (52), Ch13 (56), Interlude 03 (60), Ch14 (62),
    Ch15 (66), Ch16 (70), Ch17 (74), Ch18 (80).
 2. You need the three PDFs (not in the repo) in `~/Downloads`, and you need to run `tools/setup_tts.sh` once per machine.
 3. Follow **Adding a new part** below, once per part. Doing one part per helper agent in parallel works well.
@@ -169,6 +168,8 @@ To audition voices, run `tools/voice_samples_kokoro.py voice-samples` and open `
 | `rules`                     | `af_heart`   | –                  |
 | `lakin` (ghost king)        | `am_onyx`    | `speed 0.9, fx "ghost"` |
 | `volin` (archer)            | `am_fenrir`  | –                  |
+| `lochtiss` (High Priest)    | `bm_daniel`  | `speed 0.9`        |
+| `folkhero` (Ch09, with dogs)| `am_michael` | –                  |
 
 ### Older Piper presets (Ch06, Int01, Ch07)
 
@@ -200,3 +201,5 @@ Recurring characters so far: `narrator`, `tharmagar`, `rules`, `simon` (Simon Kl
 | int01  | Interlude 01 – Making Amends                 | 31    |
 | ch07   | Chapter 07 – The Galleries Under the Mountain| 32–35 |
 | ch08   | Chapter 08 – The Dwarven King's Manor        | 36–39 |
+| ch09   | Chapter 09 – The Battle for Hezechia         | 40–42 |
+| int02  | Interlude 02 – A Late Arrival                | 43    |

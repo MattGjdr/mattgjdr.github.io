@@ -1,0 +1,94 @@
+{
+  "id": "int02",
+  "kind": "Interlude",
+  "number": "02",
+  "title": "A Late Arrival",
+  "pages": "43",
+  "header": "img/int02-header.jpg",
+  "cast": {
+    "narrator": { "name": "Narrator", "engine": "kokoro", "voice": "bm_george", "speed": 0.95 },
+    "tharmagar": { "name": "Tharmagar", "engine": "kokoro", "voice": "bm_lewis", "speed": 0.9 },
+    "rules": { "name": "Rules", "engine": "kokoro", "voice": "af_heart", "speed": 1.0 },
+    "lochtiss": { "name": "High Priest Lochtiss", "engine": "kokoro", "voice": "bm_daniel", "speed": 0.9 }
+  },
+  "scenes": [
+    {
+      "id": "story",
+      "tab": "story",
+      "title": "A Late Arrival",
+      "kicker": "Read aloud between Chapter 09 and Chapter 10",
+      "paragraphs": [
+        [
+          ["narrator", "Behind the walls with high battlements of in the Highborn Elves’ capital, a sea of colorful tents depicting many coats of arms filled the view. Almost every great family of every kingdom came to the Council of the Sun—a meeting called hastily to form a unified battlefront. Of the most influential flags, only the Amiran royal family’s was missing."]
+        ],
+        [
+          ["narrator", "At this point, more than a month with no news from you, the Doctrine had lost any hope of finding Tharmagar. However, there you were, standing in front of High Priest Lochtiss, showing the discoveries that would justify the delay."]
+        ],
+        [
+          ["tharmagar", "It’s here, it’s all here..."],
+          ["narrator", "said Tharmagar, displaying the tome you recovered from Ignispyra to the Small Council, gathered in a round hall with an adorned dome."],
+          ["tharmagar", "...the Seeds are what brings the Darkness, and they lie scattered across the continent. The Varatash, as the First Belligerent called this enemy in the past, need the energy they emanate to live,"],
+          ["narrator", "he continued, taking his familiar, didactic tone."]
+        ],
+        [
+          ["narrator", "And the sage didn’t stop there. He dared even to speculate that the work of the enemy couldn’t be the result of only one season of efforts. Conversely, it should have taken many years, maybe a decade, considering what was necessary to “sow” the continent and form a “trellis” of wide influence, sufficient to allow the creatures to move freely from here to there. This attack would have been planned long before. For sure, the enemy must know the kings would act exactly as they did: hiding behind their fortresses’ walls, leaving the countryside naked."]
+        ],
+        [
+          ["lochtiss", "Pardon us, brother Tharmagar,"],
+          ["narrator", "the High Priest took the lead, speaking in the name of himself, his chamberlain and counselor, and the King of the Highborn Elves: the Small Council."],
+          ["lochtiss", "Be sure, I understand your concerns. Nevertheless, you forget important details: our enemy’s army is made of heathens and living dead; their very leader, the Undead King, is a necromancer: a practitioner of the Forbidden Art. What’s happening now isn’t any different from what we have dealt with many times over the ages, save for the terrifying proportion it has reached. You would know this earlier if, unfortunately, your escort wasn’t so slow,"],
+          ["narrator", "he completed, letting his glance fall upon you. But his words cut the sage like a sharp razor."]
+        ],
+        [
+          ["narrator", "Heathens? Necromancer? The Doctrine seemed to think that the attacks were the coordinated efforts of a single man instead of the whims of a higher power—an alien, conquering power. And by the look on the face of Tharmagar, you see that it was surprising to him, too, hearing Lochtiss’ conclusions."]
+        ],
+        [
+          ["lochtiss", "The crown that is due to me..."],
+          ["narrator", "the High Priest acknowledged your own report."],
+          ["lochtiss", "Wasn’t this what the Undead King said to you, Hero of Daren?"],
+          ["narrator", "—Yes, you had been awarded the title for your bravery in a quick and secluded ceremony—"],
+          ["lochtiss", "Well, do you remember that counselor of the Mage-King Ulthar, Roger Klee?"]
+        ],
+        [
+          ["narrator", "The year was 1389 of the Sun Reckoning, thirty years ago. That infamous counselor was found practicing necromancy, strengthening Amira’s depleted legions that had fallen during another unsuccessful military campaign. Having come through a time of many dire difficulties, the Mage-King saw his people on the verge of rising up, threatening even more the frail stability of the Kingdom. A culprit needed to be blamed, to calm down the mobs, so the immoral Counselor was judged and sentenced to death."]
+        ],
+        [
+          ["narrator", "As his last words, laughing out of madness or maybe despair before the unfair verdict’s execution, Klee swore he would rise from his grave to claim the Amiran Empire’s glory, no matter what."]
+        ],
+        [
+          ["narrator", "On that occasion, it was the Mage-King Ulthar who had made the treacherous denunciation of the crimes committed by his Counselor on his own orders. Tharmagar was the main prosecution witness of that Court; and High Priest Lochtiss, in turn, was the judge who issued the decision."]
+        ],
+        [
+          ["narrator", "The tormentor of Daren may have been created by the same men who, today, are gathered to try to find a way to destroy him, three decades later. The logic of the Council seemed flawless. However, you have seen the Seeds of Darkness activated—even had one in your very hands. Could the Darkness really be only a product of the Undead King’s power?"]
+        ],
+        [
+          ["narrator", "What, in all the hells, was going on in Daren, after all?"]
+        ]
+      ]
+    },
+    {
+      "id": "realm-shift",
+      "tab": "story",
+      "title": "The Realm Shift",
+      "kicker": "Before Chapter 10",
+      "paragraphs": [
+        [
+          ["rules", "The next arc of the campaign will take place in a different Realm than the world of Drunagor. Because of that, you will need to tune some of the Campaign procedures to keep the storytelling and gameplay in sync. Follow these instructions carefully so the Realm Shift runs correctly:"]
+        ],
+        [
+          ["rules", "First, each Hero must record on their Campaign Log all of their Equipment, including which Items they are carrying, which Items are stashed, and which Consumables they have. Auras and Outcomes, since they are morale and/or spiritual features, are kept as they are."]
+        ],
+        [
+          ["rules", "Then, all Consumables must be returned to the Chest Deck. Remove all Epic Items from it, also. They won't be available in the Spiritual Realm."]
+        ],
+        [
+          ["rules", "Over the next three Chapters, you will not have access to the Camp Phase, so you will not be able to retrieve any stashed Items! Therefore, you must set them aside and concentrate on the Items your Hero is equipped with."]
+        ],
+        [
+          ["rules", "At the end of this process, your Hero will have a set of equipped Items and empty bags, and your Campaign Log will list all of the Consumable Items, stashed Items, Auras, and Outcomes you have."]
+        ]
+      ]
+    }
+  ],
+  "next": "Chapter 10 – The Journey To Nowhere (page 44)"
+}
